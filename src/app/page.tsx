@@ -1,15 +1,14 @@
 import Sliderr from './components/slider';
 import Products from './components/products';
 
-
 export default async function Home() {
-  
-  const res = await fetch('http://localhost:3000/api/posts'); 
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const res = await fetch(`${baseUrl}/api/posts`);
   const posts = await res.json();
 
   return (
     <>
-      <Sliderr/>
+      <Sliderr />
       <hr />
       <Products posts={posts} />
     </>
