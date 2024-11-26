@@ -9,7 +9,7 @@ export default async function Home() {
 
   return (
     <>
-      <Sliderr />
+      <Sliderr /> 
       <hr />
       <Products posts={posts}/>
     </>
