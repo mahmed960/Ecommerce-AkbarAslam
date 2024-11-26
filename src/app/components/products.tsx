@@ -26,7 +26,7 @@ const Products = ({ posts }: ProductsProps) => {
             className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300"
           >
             {/* Image Section */}
-            <Link href={`/category/${post.mainCategory}/${post.subCategory}/${post.slug}`}>
+            <Link href={`/collection/${post.mainCategory}/${post.subCategory}/${post.slug}`}>
               <div className="relative h-48">
                 <Image
                   src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042"
@@ -46,7 +46,7 @@ const Products = ({ posts }: ProductsProps) => {
               </p>
 
               <Link
-                href={`/category/${post.mainCategory}/${post.subCategory}/${post.slug}`}
+                href={`/collection/${post.mainCategory}/${post.subCategory}/${post.slug}`}
                 className="inline-block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors duration-300"
               >
                 View Details
