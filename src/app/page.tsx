@@ -9,8 +9,8 @@ export default async function Home() {
 
   return (
     <>
-      <Sliderr /> 
-      <hr />
+      <Sliderr/> 
+      
       <Products posts={posts}/>
     </>
   );
