@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const slider = () => {
@@ -100,7 +101,7 @@ const slider = () => {
    
 
     <div className="relative ms-4">
-      <img className="w-full rounded-md" src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042" alt="Hero Image"/>
+      <Image className="w-full rounded-md" src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042" alt="Hero Image" width={200} height={200}/>
       <div className="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 size-full rounded-md mt-4 -mb-4 me-4 -ms-4 lg:mt-6 lg:-mb-6 lg:me-6 lg:-ms-6 dark:from-neutral-800 dark:via-neutral-900/0 dark:to-neutral-900/0"></div>
 
       
