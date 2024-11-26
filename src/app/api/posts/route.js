@@ -8,7 +8,6 @@ export async function GET() {
       { id: 4, title: 'Product 4', mainCategory: 'Formals', subCategory: '', slug: 'calista-old' },
       { id: 5, title: 'Product 5', mainCategory: 'Pret', subCategory: '', slug: 'leather-jacket' },
     ];
-  
     return new Response(JSON.stringify(posts), { status: 200 });
   }
   
