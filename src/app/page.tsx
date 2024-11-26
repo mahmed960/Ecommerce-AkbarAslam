@@ -11,7 +11,7 @@ export default async function Home() {
     <>
       <Sliderr />
       <hr />
-      <Products posts={posts} />
+      <Products posts={posts}/>
     </>
   );
 }
