@@ -1,5 +1,17 @@
-export default function Home() {
+import Sliderr from './components/slider';
+import Products from './components/products';
+
+
+export default async function Home() {
+  
+  const res = await fetch('http://localhost:3000/api/posts'); 
+  const posts = await res.json();
+
   return (
-    <div></div> 
+    <>
+      <Sliderr/>
+      <hr />
+      <Products posts={posts} />
+    </>
   );
 }
