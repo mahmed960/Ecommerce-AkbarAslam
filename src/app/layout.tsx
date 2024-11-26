@@ -3,8 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from './components/header'
 import Footer from './components/footer'
-import Slider from './components/slider'
-import Image from "next/image";
+
+
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -33,93 +34,9 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header/>
-        <Slider/>
        
-<div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-  <h3 className="text-5xl border-l justify-center text-center p-4 font-bold" > Products</h3>
- 
-  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-   
-    <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-      <div className="h-140 flex flex-col justify-center items-center">
-       <Image src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042" alt="" width={300} height={100}></Image>
-    </div>
-      <div className="p-4 md:p-6">
-        <span className="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
-          main Category/subcategory/slug
-        </span>
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-          Title Of the Product
-        </h3>
-        <p className="mt-3 text-gray-500 dark:text-neutral-500">
-         20 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas cumque ea alias repellat voluptates ullam.
-        </p>
-      </div>
-      <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          Rs: 22000
-        </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          Add To Cart
-        </a>
-      </div>
-    </div>
-   
-    <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-    <div className="h-140 flex flex-col justify-center items-center">
-       <Image src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042" alt="" width={300} height={100}></Image>
-    </div>
-      <div className="p-4 md:p-6">
-        <span className="block mb-1 text-xs font-semibold uppercase text-rose-600 dark:text-rose-500">
-          Asana API
-        </span>
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-          Asana
-        </h3>
-        <p className="mt-3 text-gray-500 dark:text-neutral-500">
-          Track tasks and projects, use agile boards, measure progress.
-        </p>
-      </div>
-      <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          View sample
-        </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          View API
-        </a>
-      </div>
-    </div>
-   
+       
 
-   
-    <div className="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
-    <div className="h-140 flex flex-col justify-center items-center">
-       <Image src="https://www.akbaraslam.com/cdn/shop/files/1O9A8525_x800.jpg?v=1728646042" alt="" width={300} height={100}></Image>
-    </div>
-      <div className="p-4 md:p-6">
-        <span className="block mb-1 text-xs font-semibold uppercase text-amber-500">
-          Slack API
-        </span>
-        <h3 className="text-xl font-semibold text-gray-800 dark:text-neutral-300 dark:hover:text-white">
-          Slack
-        </h3>
-        <p className="mt-3 text-gray-500 dark:text-neutral-500">
-          Email collaboration and email service desk made easy.
-        </p>
-      </div>
-      <div className="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-neutral-700 dark:divide-neutral-700">
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          View sample
-        </a>
-        <a className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#">
-          View API
-        </a>
-      </div>
-    </div>
-   
-  </div>
-
-</div>
 
         {children}
         <Footer/>

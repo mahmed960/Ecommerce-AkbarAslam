@@ -1,5 +1,6 @@
-import React from 'react'
 import Image from 'next/image'
+import React from 'react'
+
 
 const footer = () => {
   return (
@@ -8,6 +9,7 @@ const footer = () => {
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
           <div className="text-teal-600">
+           
           <Image src="https://www.akbaraslam.com/cdn/shop/files/Akbar_Aslam_Logo-small1_a93da462-6269-4282-a9a1-faa73161b336_225x@2x.png?v=1630557805" alt="" width={180} height={80}/>
 
           </div>
