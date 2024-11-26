@@ -8,7 +8,7 @@ const header = () => {
     <div className="flex h-24 items-center justify-between">
         
       <div className="flex-1 md:flex md:items-center md:gap-12">
-        <a className="block text-teal-600" href="#">
+        <a className="block" href="https://petbazar.pk/">
           <span className="sr-only">Home</span>
           <Image src="https://www.akbaraslam.com/cdn/shop/files/Akbar_Aslam_Logo-small1_a93da462-6269-4282-a9a1-faa73161b336_225x@2x.png?v=1630557805" alt="" width={180} height={80}/>
          
@@ -19,7 +19,7 @@ const header = () => {
         <nav aria-label="Global" className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm">
             <li>
-              <a className="text-gray-500 transition hover:text-gray-500/75" href="#"> Homes </a>
+              <a className="text-gray-500 transition hover:text-gray-500/75" href="https://petbazar.pk/"> Homes </a>
             </li>
 
             <li>
