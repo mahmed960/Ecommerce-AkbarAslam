@@ -1,10 +1,10 @@
-// src/app/category/[mainCategory]/page.tsx
 'use client';
 
 import { useParams } from 'next/navigation';
 
 export default function MainCategoryPage() {
-  const { mainCategory } = useParams(); // Access main category parameter
+  
+  const { mainCategory } = useParams(); 
 
   return (
     <div>
